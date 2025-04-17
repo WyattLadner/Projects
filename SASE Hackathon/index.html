@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Center</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    
+</head>
+
+<body>
+
+
+    <header>
+        
+        <div style="text-align: center;">
+            <h1>Welcome to Game Center</h1>
+            <p>Get ready for some exciting games! Click below to choose your game.</p>
+        </div>
+    </header>
+
+    <div class="login-container">
+        <button onclick="openLoginWindow()">Login</button>
+    </div>
+
+<!--comment -->
+
+
+    <main> 
+
+        <div class="container">
+            <section>
+                <div style="text-align: center;">
+                    <img src="pingponggame.png" alt="Ping Pong Game">
+                </div> 
+                <div style="text-align: center"><button onclick="openPingPong()">Play Ping Pong</button></div>
+            </section>
+
+            <section>
+                <div style="text-align: center;">
+                    <img src="tanks.jpg" alt="Tanks Game">
+                </div>
+                <div style="text-align: center;"> 
+                    <button onclick="openTanks()">Play Tanks</button>
+                </div>
+                
+            </section> 
+        </div>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <div class="container4">
+        <a href="about.html">|About|</a>
+        <a href="leaderboard.html">|Leaderboard|</a>
+        <a href="contact.html">|Contact|</a>
+     </div>
+</footer>
+
+</html>
