@@ -1,0 +1,22 @@
+simpleHash.txt
+
+The user inputs a string to be hashed.
+The hash is given a default value of 0, and a round of calculation is done for each character in the user input.
+
+The current hash value is multiplied by the given prime 31, and the ASCII value of whichever character of the input
+is currently being computed on is added. These values are always kept mod 2^16.
+
+For each iteration, the previous hash value is used in calculation. 
+
+Example: 
+Input HELLO 
+
+hashValue = (0 * 31 + 72) % 2^16 = 72
+hashValue = (72 * 31 + 69) % 2^16 = 2301
+hashValue = (2301 * 31 + 76) % 2^16 = 5871
+hashValue = (5871 * 31 + 76) % 2^16 = 51005
+hashValue = (51005 * 31 + 79) % 2^16 = 8370
+
+The final hash of HELLO in 16 bits is 8370
+
+create new algs

@@ -1,0 +1,26 @@
+birthdayAttack.txt
+
+A birthday attack is a cryptographic attack that uses the Birthday Paradox to find collisions in hash functions.
+
+The Birthday Paradox states that in a room of 23 people, there is about a 50% chance that two or more of them have the same birthday.
+
+By this logic, a birthday attack inputs random inputs into a hashing algorithm until a collision is found, rather than trying every
+possible input. This will significantly decrease the compution needed to break the algorithm.
+
+This kind of attack can show the weakness of a given hash funciton. It is used in the real world against digital signatures and hash-
+based authentication systems. Modern systems defend against these attacks by having longer outputs, like SHA256.
+
+I will demonstrate this attack on the simpleHash.py I created.
+
+
+Test how input length affects collision finding speed.
+Take lots of data and find averages and all speeds.
+
+[UPDATED INFO]
+
+After making the above tweaks to my program, it generates a spreadsheet with all of the tracked data. It generates a chart showing
+how string length affect the average amount of attempts needed to find a collision. After running this program a bunch of times, there
+does not seem to be any consistency between the graph after each new runthrough. I conlcude that the string length does not affect the
+amount of tries needed because of the randomness used in the birthday attack.
+
+To see how the sheets can be different, you have to delete the existing one and then run the program.
